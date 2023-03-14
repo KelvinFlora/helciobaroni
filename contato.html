@@ -31,6 +31,10 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="index.js"></script>
   </head>
@@ -74,5 +78,102 @@
         </div>
       </nav>
     </header>
+
+    <!-- formulário de contato-->
+
+    <div class="mb-3 email-box">
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Nome</label>
+        <input
+          type="text"
+          class="form-control"
+          id="formGroupExampleInput"
+          placeholder="Digite seu nome"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Telefone</label>
+        <input
+          type="text"
+          class="form-control"
+          id="formGroupExampleInput2"
+          placeholder="(xx) xxxxx-xxxx"
+        />
+      </div>
+      <label for="exampleFormControlInput1" class="form-label">Email</label>
+      <input
+        type="email"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="name@example.com"
+      />
+    </div>
+    <div class="mb-3 text-box">
+      <label for="exampleFormControlTextarea1" class="form-label"
+        >Digite sua mensagem:
+      </label>
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="3"
+      ></textarea>
+      <button type="button" class="btn btn-primary submit-button">
+        Enviar
+      </button>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn text-white btn-floating m-1 facebook-button"
+            href="https://www.facebook.com/helcio.baronijunior"
+            target="_blank"
+            role="button"
+          >
+            <i class="bi bi-facebook"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn text-white btn-floating m-1 instagram-button"
+            href="https://www.instagram.com/helciobaronipianista/"
+            target="_blank"
+            role="button"
+            ><i class="bi bi-instagram"></i
+          ></a>
+
+          <!-- WhatsApp (precisa colocar link) -->
+          <a
+            class="btn text-white btn-floating m-1 whatsapp-button"
+            href="https://wa.me/+5535988892908"
+            role="button"
+            ><i class="bi bi-whatsapp"></i
+          ></a>
+
+          <!-- Email (precisa colocar link) -->
+          <a
+            class="btn text-white btn-floating m-1 email-button"
+            href="#!"
+            role="button"
+            ><i class="bi bi-envelope"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Helcio Baroni - Todos os direitos reservados | Desenvolvido por
+        Kelvin Flora
+      </div>
+      <!-- Copyright -->
+    </footer>
   </body>
 </html>

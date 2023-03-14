@@ -43,3 +43,19 @@
 .email-button:hover {
   background-color: #cc4a28;
 }
+
+.email-box {
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-right: 800px;
+}
+
+.text-box {
+  margin-left: 40px;
+  margin-right: 800px;
+}
+
+.submit-button {
+  margin-top: 20px;
+  margin-left: 450px;
+}
