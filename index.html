@@ -21,6 +21,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <script src="index.js"></script>
   </head>
   <body>
@@ -156,26 +160,99 @@
       </div>
     </div>
 
-    <div class="container">
-      <p>
-        Quisque in imperdiet lorem. Pellentesque eget velit ut elit rutrum
-        gravida. Vestibulum vestibulum elit libero, sit amet maximus arcu
-        iaculis a. Phasellus feugiat, mauris vitae gravida rhoncus, turpis
-        tortor hendrerit justo, sed finibus mi velit eu neque. Sed gravida nibh
-        non enim lacinia auctor. Donec viverra, turpis ac porta ultricies, nibh
-        arcu lobortis nunc, vitae blandit nisl metus id ex. Sed semper nunc eget
-        enim ultricies tincidunt. Class aptent taciti sociosqu ad litora
-        torquent per conubia nostra, per inceptos himenaeos. Maecenas eget
-        tellus lorem. Duis iaculis diam in leo luctus, id ullamcorper lacus
-        pellentesque. Maecenas quis metus mattis mi efficitur gravida. Cras non
-        tristique est. Nulla at lorem urna. Nulla pulvinar neque at risus
-        bibendum maximus. Nulla in neque at quam consequat euismod. Class aptent
-        taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-        himenaeos. Sed odio risus, placerat euismod lacus quis, lobortis rhoncus
-        lorem. Fusce sed rhoncus dui. Vestibulum pellentesque orci at nisl
-        venenatis, sollicitudin ornare purus maximus.
-      </p>
-    </div>
+    <!-- Swiper -->
+    <section class="container swiper-class">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonialBox">
+                    <img src="images/quote.png" class="quote w-25" alt="" />
+                    <div class="content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        In dolorum quibusdam excepturi adipisci iusto
+                        accusantium quis, harum cumque aperiam voluptate debitis
+                        nisi rerum veniam optio, voluptatibus repellat animi nam
+                        quam!
+                      </p>
+                      <div class="details">
+                        <div class="imgBx">
+                          <img src="images/user1.png" />
+                        </div>
+                        <h3>Camila Silva<br /><span>Aluna</span></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonialBox">
+                    <img src="images/quote.png" class="quote w-25" alt="" />
+                    <div class="content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        In dolorum quibusdam excepturi adipisci iusto
+                        accusantium quis, harum cumque aperiam voluptate debitis
+                        nisi rerum veniam optio, voluptatibus repellat animi nam
+                        quam!
+                      </p>
+                      <div class="details">
+                        <div class="imgBx">
+                          <img src="images/user2.png" alt="" />
+                        </div>
+                        <h3>Bryan Gomes<br /><span>Aluno</span></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonialBox">
+                    <img src="images/quote.png" class="quote w-25" alt="" />
+                    <div class="content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        In dolorum quibusdam excepturi adipisci iusto
+                        accusantium quis, harum cumque aperiam voluptate debitis
+                        nisi rerum veniam optio, voluptatibus repellat animi nam
+                        quam!
+                      </p>
+                      <div class="details">
+                        <div class="imgBx">
+                          <img src="images/user3.png" alt="" />
+                        </div>
+                        <h3>Edgar Silva<br /><span>Amigo</span></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
 
     <!-- Footer -->
     <footer class="bg-dark text-center text-white">
