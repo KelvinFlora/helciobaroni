@@ -51,3 +51,56 @@
 .wpp-button-contact-page {
   font-size: 30px;
 }
+
+.yt-thumb {
+  cursor: pointer;
+  border: 0px solid rgba(0, 0, 0, 0.623);
+  border-radius: 2rem;
+  transition: all 0.2s;
+}
+
+.yt-thumb:hover {
+  border-color: rgba(0, 0, 0, 0.623);
+}
+
+.yt-thumb img {
+  width: 75%;
+}
+
+.yt-thumb:hover img {
+  width: 85%;
+}
+
+.form-control {
+  min-height: 48px;
+}
+
+.page-contact {
+  background: url("images/piano-g20bb83255_1920.jpg");
+  background-size: cover;
+}
+
+.contact-overlay {
+  background-color: rgba(0, 0, 0, 0.623);
+}
+
+.page-videos {
+  background: url("images/piano-video-page.jpg");
+  background-size: cover;
+}
+
+.videos-overlay-cont1 {
+  background-color: rgba(0, 0, 0, 0.623);
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.videos-overlay-cont2 {
+  background-color: rgba(0, 0, 0, 0.623);
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.link-text {
+  text-decoration: none;
+}
