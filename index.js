@@ -1,6 +1,7 @@
-const phoneInput = document.getElementById("phone");
-phoneInput.addEventListener("input", formatPhone);
-
+document.addEventListener("DOMContentLoaded", function () {
+  const phoneInput = document.getElementById("phone");
+  phoneInput.addEventListener("input", formatPhone);
+});
 function formatPhone() {
   const phoneInput = document.getElementById("phone");
   let phone = phoneInput.value.replace(/\D/g, ""); // remove all non-numeric characters
