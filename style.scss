@@ -1,0 +1,239 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+$primary: #f6d76f;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "node_modules/bootstrap/scss/variables";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "node_modules/bootstrap/scss/maps";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/containers";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "node_modules/bootstrap/scss/utilities/api";
+
+// 8. Add additional custom code here
+
+@import "node_modules/animate.css/animate.min.css";
+
+
+#home-slider .slide-image {
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #home-slider .carousel-item .carousel-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #fff;
+  }
+  
+  .facebook-button {
+    background-color: #3b5998;
+  }
+  
+  .facebook-button:hover {
+    background-color: #2a4887;
+  }
+  .instagram-button {
+    background-color: #ac2bac;
+  }
+  
+  .instagram-button:hover {
+    background-color: #9b1a9b;
+  }
+  
+  .whatsapp-button {
+    background-color: #128c7e;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #017b6d;
+  }
+  
+  .email-button {
+    background-color: #dd4b39;
+  }
+  
+  .email-button:hover {
+    background-color: #cc4a28;
+  }
+  
+  .link-selection {
+    color: black;
+  }
+  
+  .wpp-button-contact-page {
+    font-size: 30px;
+  }
+  
+  .yt-thumb {
+    cursor: pointer;
+    border: 0px solid rgba(0, 0, 0, 0.623);
+    border-radius: 2rem;
+    transition: all 0.2s;
+  }
+  
+  .yt-thumb:hover {
+    border-color: rgba(0, 0, 0, 0.623);
+  }
+  
+  .yt-thumb img {
+    width: 75%;
+  }
+  
+  .yt-thumb:hover img {
+    width: 85%;
+  }
+  
+  .form-control {
+    min-height: 48px;
+  }
+  
+  .page-contact {
+    background: url("images/piano-g20bb83255_1920.jpg");
+    background-size: cover;
+  }
+  
+  .contact-overlay {
+    background-color: rgba(0, 0, 0, 0.623);
+  }
+  
+  .page-videos {
+    background: url("images/piano-video-page.jpg");
+    background-size: cover;
+  }
+  
+  .videos-overlay-cont1 {
+    background-color: rgba(0, 0, 0, 0.623);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+  }
+  
+  .videos-overlay-cont2 {
+    background-color: rgba(0, 0, 0, 0.623);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+  
+  .link-text {
+    text-decoration: none;
+  }
+  
+  .swiper-class {
+    position: relative;
+    width: 30%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    overflow: hidden;
+  }
+  
+  .swiper {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  
+  .testimonialBox {
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    padding-top: 90px;
+    color: #999;
+  }
+  
+  .testimonialBox .quote {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    opacity: 0.08;
+  }
+  
+  .testimonialBox .details {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .testimonialBox .details .imgBx {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  
+  .testimonialBox .details .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .testimonialBox .details h3 {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #2196f3;
+    line-height: 1.1em;
+  }
+  
+  .testimonialBox .details h3 span {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .swiper-3d .swiper-slide-shadow-left,
+  .swiper-3d .swiper-slide-shadow-right {
+    background-image: none;
+  }
+  
