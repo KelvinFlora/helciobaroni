@@ -1,3 +1,9 @@
-node_modules
-style.css
-style.css.map
+/node_modules
+public/style.css
+public/style.css.map
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
