@@ -178,7 +178,8 @@ $primary: #252525;
   }
   
   .swiper-class {
-    width: 30%;
+    position: relative;
+    width: 50%;
     min-height: 50vh;
     display: flex;
     justify-content: center;
@@ -218,6 +219,7 @@ $primary: #252525;
   
   .testimonialBox .quote {
     position: absolute;
+    width: 15%;
     top: 20px;
     right: 30px;
     opacity: 0.08;
@@ -275,4 +277,28 @@ $primary: #252525;
     text-align: center;
   }
 
-  
+  @media screen and (max-width: 500px) {
+    .swiper-class {
+      position: relative;
+      width: 100%;
+      min-height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      overflow: hidden;
+      margin-top: 0px !important;
+      padding-top: 0px !important;
+    }
+
+    .iframe-video {
+      width: 400px;
+      height: 220px;
+      border-radius: 2%;
+    }
+
+    .index-video{
+      margin-bottom: 20px;
+    }
+    
+  }
