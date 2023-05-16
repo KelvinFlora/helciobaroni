@@ -277,6 +277,20 @@ $primary: #252525;
     text-align: center;
   }
 
+  .card {
+    color: white;
+    max-width: 1200px;
+    border: none !important;
+  }
+
+  .card-container {
+    margin-top: 100px;
+  }
+
+  .card-container2{
+    margin-top: 50px;
+  }
+
   @media screen and (max-width: 500px) {
     .swiper-class {
       position: relative;
@@ -287,8 +301,8 @@ $primary: #252525;
       align-items: center;
       background: #fff;
       overflow: hidden;
-      margin-top: 0px !important;
-      padding-top: 0px !important;
+      margin-top: 100px !important;
+      margin-bottom: 100px !important;
     }
 
     .iframe-video {
@@ -298,7 +312,14 @@ $primary: #252525;
     }
 
     .index-video{
+      margin-top: 50px;
       margin-bottom: 20px;
     }
     
+    .video-title {
+      text-align: center;
+    }
+    .submit-btn {
+      text-align: center;
+    }
   }
