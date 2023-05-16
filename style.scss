@@ -64,7 +64,7 @@ $primary: #252525;
   }
   .text-history{
     color: white;
-    padding-top: 50px;
+    padding-top: px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: larger;
   }
@@ -145,10 +145,6 @@ $primary: #252525;
     margin-bottom: 150px;
   }
   
-  .contact-row {
-   
-  }
-  
   .page-videos {
     background: url("images/piano-video-page.jpg");
     background-size: cover;
@@ -182,7 +178,7 @@ $primary: #252525;
   }
   
   .swiper-class {
-    width: 40%;
+    width: 30%;
     min-height: 50vh;
     display: flex;
     justify-content: center;
@@ -268,4 +264,15 @@ $primary: #252525;
   .swiper-3d .swiper-slide-shadow-right {
     background-image: none;
   }
+  
+  .title-midia {
+    color: white;
+  }
+
+  .index-video {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
   
