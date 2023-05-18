@@ -2,7 +2,7 @@
 // Option A: Include all of Bootstrap
 
 // Include any default variable overrides here (though functions won't be available)
-$primary: #252525;
+$primary: #FF0000;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
@@ -135,8 +135,9 @@ $primary: #252525;
   }
   
   .page-contact {
-    background: url("images/piano-g20bb83255_1920.jpg");
+    background: url("/images/piano-g20bb83255_1920.jpg") no-repeat center center fixed;
     background-size: cover;
+    background-position: fixed;
   }
   
   .contact-overlay {
@@ -291,6 +292,11 @@ $primary: #252525;
     margin-top: 50px;
   }
 
+  .iframe-video {
+    width: 80%;
+    max-width: 560px;
+  }
+  
   @media screen and (max-width: 500px) {
     .swiper-class {
       position: relative;
@@ -306,7 +312,7 @@ $primary: #252525;
     }
 
     .iframe-video {
-      width: 400px;
+      width: 100%;
       height: 220px;
       border-radius: 2%;
     }
@@ -322,4 +328,29 @@ $primary: #252525;
     .submit-btn {
       text-align: center;
     }
+  }
+
+  @media (max-width: 768px) { 
+    .history-img {
+      width: 100% !important;
+      float: none;
+    }
+  }
+
+  footer {
+    background-color: #292f34 !important;
+
+    .copy-bar {
+      background-color: #171a1d !important;
+    }
+  }
+
+  header, nav {
+    background-color: #171a1d !important;
+  }
+
+  .imgbg3{
+    background: url('/images/helcioplayspiano.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: fixed;
   }
