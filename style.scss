@@ -2,7 +2,7 @@
 // Option A: Include all of Bootstrap
 
 // Include any default variable overrides here (though functions won't be available)
-$primary: #FF0000;
+$primary: rgb(112, 109, 109);
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
@@ -152,9 +152,13 @@ $primary: #FF0000;
   }
   
   .video-title {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     color: black;
+    text-align: center;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #FFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
   .youtube-button {
@@ -162,10 +166,17 @@ $primary: #FF0000;
     color: white;
   }
 
-  .videos-overlay-cont1 {
+  .tab-btn {
+    margin-top: 25px;
+  }
+  .videos-overlay-cont0 {
     background-color: rgba(0, 0, 0, 0.623);
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
+  }
+
+  .videos-overlay-cont1 {
+    background-color: rgba(0, 0, 0, 0.623);
   }
   
   .videos-overlay-cont2 {
@@ -174,6 +185,10 @@ $primary: #FF0000;
     border-bottom-left-radius: 1rem;
   }
   
+  .thumb-text {
+    font-size: larger;
+  }
+
   .link-text {
     text-decoration: none;
   }

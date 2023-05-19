@@ -72,103 +72,137 @@
           <h1 class="video-title">Playlist de Vídeos</h1>
         </div>
       </div>
-      </div>
+    </div>
 
-      <!-- Thumbnails -->
-      <div class="container text-center videos-overlay-cont1">
+    <!-- Thumbnails -->
+    <div class="container text-center videos-overlay-cont0">
+      <!-- tab chips -->
+      <div class="container">
         <div class="row">
-          <div class="col-md-4 pb-5 pt-5 yt-thumb">
-            <a
-              class="text-light link-text"
-              href="https://youtu.be/Zdl0o2WpaUg"
-              target="_blank"
-            >
-              <img
-                src="images/Thumbnails/runningthumb.jpg"
-                class="img-fluid rounded"
-                alt="..."
-              />
-              <h3 class="pt-3">Stranger Things - Running Up That Hills</h3>
-            </a>
+          <div class="col">
+            <button class="btn btn-primary tab-btn" onclick="openTab(0)">
+              Popular
+            </button>
           </div>
-          <div class="col-md-4 pb-5 pt-5 yt-thumb">
-            <a
-              class="text-light link-text"
-              href="https://youtu.be/8am1MGKAomg"
-              target="_blank"
-            >
-              <img
-                src="images/Thumbnails/californiathumb.jpg"
-                class="img-fluid rounded"
-                alt="..."
-              />
-              <h3 class="pt-3">Stranger Things - California Dreamin</h3>
-            </a>
+          <div class="col">
+            <button class="btn btn-primary tab-btn" onclick="openTab(1)">
+              Clássica
+            </button>
           </div>
-          <div class="col-md-4 pb-5 pt-5 yt-thumb">
-            <a
-              class="text-light link-text"
-              href="https://youtu.be/N7SOhV_UojY"
-              target="_blank"
-            >
-              <img
-                src="images/Thumbnails/chavesthumb.jpg"
-                class="img-fluid rounded"
-                alt="..."
-              />
-              <h3 class="pt-3">Chaves - Farewell My lovely</h3>
-            </a>
+          <div class="col">
+            <button class="btn btn-primary tab-btn" onclick="openTab(2)">
+              Internacional
+            </button>
           </div>
         </div>
       </div>
+    </div>
+    <!-- videos -->
+    <div class="tab-content">
+      <div class="tab-pane fade show" id="tab1">
+        <div class="container text-center videos-overlay-cont1">
+          <div class="row">
+            <div class="col-md-4 pb-5 pt-4 yt-thumb">
+              <a
+                class="text-light link-text"
+                href="https://youtu.be/Zdl0o2WpaUg"
+                target="_blank"
+              >
+                <img
+                  src="images/Thumbnails/runningthumb.jpg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+                <h3 class="pt-3 thumb-text">
+                  Stranger Things - Running Up That Hills
+                </h3>
+              </a>
+            </div>
+            <div class="col-md-4 pb-5 pt-4 yt-thumb">
+              <a
+                class="text-light link-text"
+                href="https://youtu.be/8am1MGKAomg"
+                target="_blank"
+              >
+                <img
+                  src="images/Thumbnails/californiathumb.jpg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+                <h3 class="pt-3 thumb-text">
+                  Stranger Things - California Dreamin
+                </h3>
+              </a>
+            </div>
+            <div class="col-md-4 pb-5 pt-4 yt-thumb">
+              <a
+                class="text-light link-text"
+                href="https://youtu.be/N7SOhV_UojY"
+                target="_blank"
+              >
+                <img
+                  src="images/Thumbnails/chavesthumb.jpg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+                <h3 class="pt-3 thumb-text">Chaves - Farewell My lovely</h3>
+              </a>
+            </div>
+          </div>
+        </div>
 
-      <div class="container text-center videos-overlay-cont2">
-        <div class="row">
-          <div class="col-md-4 pb-5 pt-5 yt-thumb">
-            <a
-              class="text-light link-text"
-              href="https://youtu.be/igoFX0fdEGg"
-              target="_blank"
-            >
-              <img
-                src="images/Thumbnails/cupheadthumb.jpg"
-                class="img-fluid rounded"
-                alt="..."
-              />
-              <h3 class="pt-3">The Cuphead Show - Theme Song</h3>
-            </a>
+        <div class="container text-center videos-overlay-cont2">
+          <div class="row">
+            <div class="col-md-4 pb-5 pt-4 yt-thumb">
+              <a
+                class="text-light link-text"
+                href="https://youtu.be/igoFX0fdEGg"
+                target="_blank"
+              >
+                <img
+                  src="images/Thumbnails/cupheadthumb.jpg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+                <h3 class="pt-3 thumb-text">The Cuphead Show - Theme Song</h3>
+              </a>
+            </div>
+            <div class="col-md-4 pb-5 pt-4 yt-thumb">
+              <a
+                class="text-light link-text"
+                href="https://youtu.be/n4i2VAhNMCI"
+                target="_blank"
+              >
+                <img
+                  src="images/Thumbnails/elvisthumb.jpg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+                <h3 class="pt-3 thumb-text">
+                  Elvis Presley - Can't Help Falling In Love
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </h3>
+              </a>
+            </div>
+            <div class="col-md-4 pb-5 pt-4 yt-thumb">
+              <a
+                class="text-light link-text"
+                href="https://youtu.be/cMNps_qxSag"
+                target="_blank"
+              >
+                <img
+                  src="images/Thumbnails/harrythumb.jpg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+                <h3 class="pt-3 thumb-text">Harry Styles - As It Was</h3>
+              </a>
+            </div>
           </div>
-          <div class="col-md-4 pb-5 pt-5 yt-thumb">
-            <a
-              class="text-light link-text"
-              href="https://youtu.be/n4i2VAhNMCI"
-              target="_blank"
-            >
-              <img
-                src="images/Thumbnails/elvisthumb.jpg"
-                class="img-fluid rounded"
-                alt="..."
-              />
-              <h3 class="pt-3">
-                Elvis Presley - Can't Help Falling In Love
-                <i class="bi bi-box-arrow-up-right"></i>
-              </h3>
-            </a>
-          </div>
-          <div class="col-md-4 pb-5 pt-5 yt-thumb">
-            <a
-              class="text-light link-text"
-              href="https://youtu.be/cMNps_qxSag"
-              target="_blank"
-            >
-              <img
-                src="images/Thumbnails/harrythumb.jpg"
-                class="img-fluid rounded"
-                alt="..."
-              />
-              <h3 class="pt-3">Harry Styles - As It Was</h3>
-            </a>
-          </div>
+        </div>
+        <div class="tab-pane fade" id="tab2">
+          <h3>Conteúdo da Tab 2</h3>
+          <p>Este é o conteúdo da segunda aba.</p>
         </div>
       </div>
 
@@ -232,7 +266,10 @@
       <!-- Grid container -->
 
       <!-- Copyright -->
-      <div class="copy-bar text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      <div
+        class="copy-bar text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
         © 2023 Helcio Baroni - Todos os direitos reservados | Desenvolvido por
         Kelvin Flora
       </div>
