@@ -10,6 +10,7 @@
       href="images/grand-piano.png"
       type="image/x-icon"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -80,18 +81,23 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <button class="btn btn-primary tab-btn" onclick="openTab(0)">
-              Popular
-            </button>
-          </div>
-          <div class="col">
-            <button class="btn btn-primary tab-btn" onclick="openTab(1)">
+            <button class="btn btn-dark tab-btn" onclick="openTab(0)">
               Clássica
             </button>
           </div>
           <div class="col">
-            <button class="btn btn-primary tab-btn" onclick="openTab(2)">
+            <button class="btn btn-dark tab-btn" onclick="openTab(1)">
+              Popular
+            </button>
+          </div>
+          <div class="col">
+            <button class="btn btn-dark tab-btn" onclick="openTab(2)">
               Internacional
+            </button>
+          </div>
+          <div class="col">
+            <button class="btn btn-dark tab-btn" onclick="openTab(3)">
+              Jazz
             </button>
           </div>
         </div>
@@ -100,6 +106,218 @@
     <!-- videos -->
     <div class="tab-content">
       <div class="tab-pane fade show" id="tab1">
+        <!-- Clássica -->
+        <div class="container text-center videos-overlay-cont1">
+          <div class="row">
+            <div class="col-md-4 pb-5 pt-4 yt-thumb">
+              <a
+                class="text-light link-text"
+                href="https://youtu.be/iI8Lyaq6p6E"
+                target="_blank"
+              >
+                <img
+                  src="images/Thumbnails/Clássicas/chopinthumb.jpg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+                <h3 class="pt-3 thumb-text">Nocturne Op.9 No.1 - F.Chopin</h3>
+              </a>
+            </div>
+            <div class="col-md-4 pb-5 pt-4 yt-thumb">
+              <a
+                class="text-light link-text"
+                href="https://youtu.be/MMD4INhnNhQ"
+                target="_blank"
+              >
+                <img
+                  src="images/Thumbnails/Clássicas/schummanthumb.jpg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+                <h3 class="pt-3 thumb-text">
+                  Kind im Einschlummern / Der Dichter Spricht - R.Schumann
+                </h3>
+              </a>
+            </div>
+            <div class="col-md-4 pb-5 pt-4 yt-thumb">
+              <a
+                class="text-light link-text"
+                href="https://youtu.be/C047IXSuLCo"
+                target="_blank"
+              >
+                <img
+                  src="images/Thumbnails/Clássicas/brahmsthumb.jpg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+                <h3 class="pt-3 thumb-text">
+                  Waltzes Op.39 For Two Pianos (Com Francis Vilela) - Johannes
+                  Brahms
+                </h3>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container text-center videos-overlay-cont2">
+          <div class="row">
+            <div class="col-md-4 pb-5 pt-4 yt-thumb">
+              <a
+                class="text-light link-text"
+                href="https://youtu.be/SDxG_fU_SaA"
+                target="_blank"
+              >
+                <img
+                  src="images/Thumbnails/Clássicas/scriabinthumb.jpg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+                <h3 class="pt-3 thumb-text">Estudo Op.2 No.1 - Scriabin</h3>
+              </a>
+            </div>
+            <div class="col-md-4 pb-5 pt-4 yt-thumb">
+              <a
+                class="text-light link-text"
+                href="https://youtu.be/tPZmYeI06Y8"
+                target="_blank"
+              >
+                <img
+                  src="images/Thumbnails/Clássicas/beethoventhumb.jpg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+                <h3 class="pt-3 thumb-text">
+                  Sonata For Piano Four Hands (Com Helcio Vaz) - Beethoven
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </h3>
+              </a>
+            </div>
+            <div class="col-md-4 pb-5 pt-4 yt-thumb">
+              <a
+                class="text-light link-text"
+                href="https://youtu.be/FHxXn7s6tFE"
+                target="_blank"
+              >
+                <img
+                  src="images/Thumbnails/Clássicas/bachthumb.jpg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+                <h3 class="pt-3 thumb-text">
+                  Prelude in C Major BWV 870 - S.Bach
+                </h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popular -->
+      <div class="tab-pane fade" id="tab2">
+        <div class="container text-center videos-overlay-cont1">
+          <div class="row">
+            <div class="col-md-4 pb-5 pt-4 yt-thumb">
+              <a
+                class="text-light link-text"
+                href="https://youtu.be/1sjkNDj3qDI"
+                target="_blank"
+              >
+                <img
+                  src="images/Thumbnails/Popular/ovothumb.jpg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+                <h3 class="pt-3 thumb-text">O Ovo - Hermeto Pascoal</h3>
+              </a>
+            </div>
+            <div class="col-md-4 pb-5 pt-4 yt-thumb">
+              <a
+                class="text-light link-text"
+                href="https://youtu.be/sR6Yx0w8E9s"
+                target="_blank"
+              >
+                <img
+                  src="images/Thumbnails/Popular/joaoemariathumb.jpg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+                <h3 class="pt-3 thumb-text">João e Maria - Chico Buarque</h3>
+              </a>
+            </div>
+            <div class="col-md-4 pb-5 pt-4 yt-thumb">
+              <a
+                class="text-light link-text"
+                href="https://youtu.be/bWYMLbf6nDE"
+                target="_blank"
+              >
+                <img
+                  src="images/Thumbnails/Popular/oceanothumb.jpg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+                <h3 class="pt-3 thumb-text">Oceano - Djavan</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container text-center videos-overlay-cont2">
+          <div class="row">
+            <div class="col-md-4 pb-5 pt-4 yt-thumb">
+              <a
+                class="text-light link-text"
+                href="https://youtu.be/d8yiY6tqzkk"
+                target="_blank"
+              >
+                <img
+                  src="images/Thumbnails/Popular/miltonthumb.jpg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+                <h3 class="pt-3 thumb-text">
+                  Nada Será Como Antes - Milton Nascimento (Piano a quatro mãos
+                  com Bruno Camargo)
+                </h3>
+              </a>
+            </div>
+            <div class="col-md-4 pb-5 pt-4 yt-thumb">
+              <a
+                class="text-light link-text"
+                href="https://youtu.be/0ufepJ6JxTY"
+                target="_blank"
+              >
+                <img
+                  src="images/Thumbnails/Popular/belezathumb.jpg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+                <h3 class="pt-3 thumb-text">
+                  Beleza Destruída - Djavan e Milton Nascimento
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </h3>
+              </a>
+            </div>
+            <div class="col-md-4 pb-5 pt-4 yt-thumb">
+              <a
+                class="text-light link-text"
+                href="https://youtu.be/uJzkOCjwy2U"
+                target="_blank"
+              >
+                <img
+                  src="images/Thumbnails/Popular/insensatez-thumb.jpg"
+                  class="img-fluid rounded"
+                  alt="..."
+                />
+                <h3 class="pt-3 thumb-text">
+                  Tom Jobim - Insensatez (Improvisação com Nelson Faria)
+                </h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Internacional -->
+      <div class="tab-pane fade" id="tab3">
         <div class="container text-center videos-overlay-cont1">
           <div class="row">
             <div class="col-md-4 pb-5 pt-4 yt-thumb">
@@ -200,23 +418,20 @@
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="tab2">
-          <h3>Conteúdo da Tab 2</h3>
-          <p>Este é o conteúdo da segunda aba.</p>
-        </div>
       </div>
+      <!-- Jazz -->
+    </div>
 
-      <div class="text-center pt-3 pb-3">
-        <a
-          href="https://www.youtube.com/@pianomisto3565/videos"
-          target="_blank"
-          rel=""
-        >
-          <button type="button" class="btn btn-lg text fs-3 youtube-button">
-            <i class="bi bi-youtube"></i> Ver mais
-          </button>
-        </a>
-      </div>
+    <div class="text-center pt-3 pb-3">
+      <a
+        href="https://www.youtube.com/@pianomisto3565/videos"
+        target="_blank"
+        rel=""
+      >
+        <button type="button" class="btn btn-lg text fs-3 youtube-button">
+          <i class="bi bi-youtube"></i> Ver mais
+        </button>
+      </a>
     </div>
 
     <!-- Footer -->
@@ -276,6 +491,17 @@
       <!-- Copyright -->
     </footer>
 
+    <script>
+      $(document).ready(function () {
+        // Ativa a primeira aba assim que a página for carregada
+        openTab(0);
+      });
+
+      function openTab(tabIndex) {
+        $(".tab-pane").removeClass("show active");
+        $("#tab" + (tabIndex + 1)).addClass("show active");
+      }
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
