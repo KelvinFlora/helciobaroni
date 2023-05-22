@@ -338,18 +338,24 @@ $primary: #a7a5a5;
   }
 
   .video-index-container {
-    padding-top: 50px;
-    padding-bottom: 75px;
+    padding-top: 125px;
+    padding-bottom: 150px;
   }
+
   .contact-container {
     padding-bottom: 50px;
   }
   
   @media screen and (max-width: 500px) {
+    .history-container {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
     .swiper-class {
       position: relative;
       width: 100%;
-      min-height: 50vh;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -361,7 +367,6 @@ $primary: #a7a5a5;
     .title-midia {
       margin-top: 50px;
       margin-bottom: 10px;
-      color: white;
     }
 
     .iframe-video {
@@ -378,6 +383,12 @@ $primary: #a7a5a5;
     .video-title {
       text-align: center;
     }
+
+    .video-index-container {
+      padding-top: 250px;
+      padding-bottom: 250px;
+    }
+
     .submit-btn {
       text-align: center;
     }
