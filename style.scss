@@ -42,6 +42,10 @@ $primary: #000000;
 
 @import "node_modules/animate.css/animate.min.css";
 
+  .slider-container {
+    animation: fadeIn;
+    animation-duration: 4s;
+  }
   #home-slider .slide-image {
     min-height: 92vh;
     background-size: cover;
@@ -161,6 +165,8 @@ $primary: #000000;
     margin-top: 150px;
     margin-bottom: 150px;
     border-radius: 1rem;
+    animation: fadeIn;
+    animation-duration: 2s;
   }
   
   .page-videos {
@@ -174,16 +180,36 @@ $primary: #000000;
     color: black;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeInDown;
+    animation-duration: 2s;
+  }
+  
+  .videos-1 {
+    animation: fadeIn;
+    animation-duration: 2s;
+  }
+
+  .videos-2 {
+    animation: fadeIn;
+    animation-duration: 2s;
   }
 
   .youtube-button {
     background-color: red;
     color: white;
+    animation: fadeIn;
+    animation-duration: 2s;
+  }
+  
+  .video-buttons {
+    animation: fadeIn;
+    animation-duration: 3s;
   }
 
   .tab-btn {
     margin-top: 25px;
   }
+
   .videos-overlay-cont0 {
     background-color: rgba(0, 0, 0, 0.623);
     border-top-right-radius: 1rem;
@@ -302,11 +328,15 @@ $primary: #000000;
   .title-midia {
     margin-top: 50px;
     margin-bottom: 50px;
+    animation: fadeInLeft;
+    animation-duration: 2s;
   }
 
   .index-video {
     margin-bottom: 25px;
     text-align: center;
+    animation: fadeInRight;
+    animation-duration: 2s;
   }
 
   .card {
@@ -315,7 +345,15 @@ $primary: #000000;
     border: none !important;
     padding-top: 90px;
     padding-bottom: 90px;
-    animation: fadeIn;
+  }
+
+  .card-1 {
+    animation: fadeInLeft;
+    animation-duration: 4s;
+  }
+
+  .card-2 {
+    animation: fadeInRight;
     animation-duration: 4s;
   }
 
@@ -360,6 +398,8 @@ $primary: #000000;
 
   .contact-container {
     padding-bottom: 50px;
+    animation: fadeIn;
+    animation-duration: 4s;
   }
   
   @media screen and (max-width: 500px) {
