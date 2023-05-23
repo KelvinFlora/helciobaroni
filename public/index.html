@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -62,7 +63,7 @@
     </header>
 
     <!-- Carousel -->
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 wow">
       <div
         id="home-slider"
         class="carousel carousel-light slide"
@@ -152,36 +153,36 @@
     </div>
 
     <!-- history -->
-    <div class="history-container">
+    <div class="history-container ">
     <div class="container-md text-center text-title">
       <div class="row">
         <div class="col-md-12 card-body">
-          <h1 class="text- center">História</h1>
+          <h1 class="text-center history-title wow">História</h1>
         </div>
         <div class="text-container">
           <img
             src="images/helcioplayspiano.jpg"
             alt="..."
-            class="img-fluid rounded text-center w-50 me-4 history-img mb-3"
+            class="img-fluid rounded text-center w-50 me-4 history-img mb-3 wow"
             style="float: left"
           />
-          <p class="ps-3 text-start text-history">
+          <p class="ps-3 text-start text-history wow">
             Helcio Baroni Junior é Pianista e Professor nascido em Varginha.
             Teve sua formação acadêmica na USP de Ribeirão Preto onde cursou
             bacharelado em Piano Clássico.
             <br />
           </p>
-          <p class="ps-3 text-start text-history">
+          <p class="ps-3 text-start text-history wow">
             Atualmente estuda com André Marques, pianista do Grupo de
             Hermeto Pascoal. Atua como pianista e professor de piano popular e
             erudito. Possuindo diversas formações como músico: Piano Solo,
             Pianista Acompanhador de Cantores e também a formação em trio
             composta por bateria, baixo e piano. <br />
-            <p class="ps-3 text-start text-history">
+            <p class="ps-3 text-start text-history wow">
             Além disso, desenvolve um
             trabalho como arranjador, tendo como especialidade a linguagem da
             música Brasileira nos gêneros: Baião, Frevo, Maracatu, Samba, Bossa, etc. <br />
-            <p class="ps-3 text-start text-history">
+            <p class="ps-3 text-start text-history wow">
             Realiza apresentações em eventos, como por exemplo,
             casamentos, jantares e recitais.
           </p>
@@ -195,7 +196,7 @@
         <!-- Services -->
         <div style="background-color: white;">
         <div class="container card-container">
-          <div class="card mb-3 rounded-start">
+          <div class="card mb-3 rounded-start wow">
             <div class="row g-5">
               <div class="col-md-6">
                 <img
@@ -218,7 +219,7 @@
           </div>
         </div>
         <div class="container card-container2">
-          <div class="card mb-3 rounded-end">
+          <div class="card mb-3 rounded-end wow">
             <div class="row g-5">
               <div class="col-md-6 d-none d-md-block">
                 <div class="card-body">
@@ -438,7 +439,7 @@
             <div class="col-12">
               <button
                 type="submit"
-                class="btn btn-primary submit-button mt-2 btn-lg w-50"
+                class="btn btn-light submit-button mt-2 btn-lg w-50"
               >
                 Enviar
               </button>
@@ -531,5 +532,9 @@
     ></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
   </body>
 </html>
