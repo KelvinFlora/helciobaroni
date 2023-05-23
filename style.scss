@@ -2,7 +2,7 @@
 // Option A: Include all of Bootstrap
 
 // Include any default variable overrides here (though functions won't be available)
-$primary: #a7a5a5;
+$primary: #000000;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
@@ -42,8 +42,7 @@ $primary: #a7a5a5;
 
 @import "node_modules/animate.css/animate.min.css";
 
-
-#home-slider .slide-image {
+  #home-slider .slide-image {
     min-height: 80vh;
     background-size: cover;
     background-position: center;
@@ -297,7 +296,7 @@ $primary: #a7a5a5;
 
   .card {
     max-width: 1440px;
-    background-color: #a7a5a5;
+    background-color: white;
     border: none !important;
     padding-top: 90px;
     padding-bottom: 90px;
