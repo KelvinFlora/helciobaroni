@@ -63,7 +63,7 @@ $primary: #000000;
   }
 
   .history-img {
-    animation: bounceInDown;
+    animation: fadeInLeft;
     animation-duration: 2s;
   }
   
@@ -81,7 +81,7 @@ $primary: #000000;
     padding-top: px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: larger;
-    animation: bounceInDown;
+    animation: fadeInRight;
     animation-duration: 2s;
   }
   
@@ -245,6 +245,8 @@ $primary: #000000;
     padding: 40px;
     padding-top: 0px;
     color: #999;
+    animation: fadeIn;
+    animation-duration: 4s;
   }
   
   .testimonialBox .quote {
@@ -313,8 +315,8 @@ $primary: #000000;
     border: none !important;
     padding-top: 90px;
     padding-bottom: 90px;
-    animation: bounceInUp;
-    animation-duration: 2s;
+    animation: fadeIn;
+    animation-duration: 4s;
   }
 
   .card-img {
