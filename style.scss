@@ -80,6 +80,7 @@ $primary: #000000;
     animation: bounceInDown;
     animation-duration: 2s;
   }
+
   .text-history{
     color: white;
     padding-top: px;
@@ -403,10 +404,62 @@ $primary: #000000;
   }
   
   @media screen and (max-width: 500px) {
+
+    .slider-container {
+      animation: fadeIn;
+      animation-duration: 4s;
+    }
+
+    .history-img {
+      animation: fadeIn;
+      animation-duration: 2s;
+    }
+    
+    .history-title{
+      animation: fadeIn;
+      animation-duration: 2s;
+    }
+
     .history-container {
       padding-top: 70px;
       padding-bottom: 70px;
     }
+
+    .text-history{
+      animation: fadeIn;
+      animation-duration: 2s;
+    }
+
+    .card-1 {
+      animation: fadeInUp;
+      animation-duration: 4s;
+    }
+  
+    .card-2 {
+      animation: fadeInUp;
+      animation-duration: 2s;
+    }
+
+    .contact-overlay {
+      animation: fadeIn;
+      animation-duration: 2s;
+    }
+
+    .video-title {
+      animation: fadeIn;
+      animation-duration: 2s;
+    }
+
+    .videos-1 {
+      animation: fadeIn;
+      animation-duration: 2s;
+    }
+  
+    .videos-2 {
+      animation: fadeIn;
+      animation-duration: 2s;
+    }
+  
 
     .swiper-class {
       position: relative;
@@ -427,6 +480,8 @@ $primary: #000000;
     .title-midia {
       margin-top: 50px;
       margin-bottom: 10px;
+      animation: fadeInDown;
+      animation-duration: 2s;
     }
 
     .iframe-video {
@@ -438,6 +493,8 @@ $primary: #000000;
     .index-video{
       margin-top: 20px;
       margin-bottom: 20px;
+      animation: fadeInUp;
+      animation-duration: 2s;
     }
     
     .video-title {
