@@ -459,7 +459,15 @@ $primary: #000000;
       animation: fadeIn;
       animation-duration: 2s;
     }
-  
+
+    .yt-thumb img {
+      width: 80%;
+      transition: all 0.1s ease-in;
+    }
+    
+    .yt-thumb:hover img {
+      width: 80%;
+    }
 
     .swiper-class {
       position: relative;
