@@ -80,67 +80,75 @@
     <div class="container py-0 contact-overlay text-light wow">
       <div class="row">
         <div class="col-12 col-lg-6 mb-4 ps-4 pe-4">
-          <div class="row justify-content-center mb-3">
-            <div class="col-12">
-              <label for="formGroupExampleInput" class="form-label pt-4"
-                >Nome</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="formGroupExampleInput"
-                placeholder="Digite seu nome"
-              />
+          <form id="myForm">
+            <div class="row justify-content-center mb-3">
+              <div class="col-12">
+                <label for="formGroupExampleInput" class="form-label"
+                  >Nome</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  placeholder="Digite seu nome"
+                />
+              </div>
             </div>
-          </div>
-          <div class="row justify-content-center mb-3">
-            <div class="col-12">
-              <label for="phone" class="form-label">Telefone</label>
-              <input
-                type="text"
-                class="form-control"
-                id="phone"
-                name="phone"
-                placeholder="(xx) xxxxx-xxxx"
-              />
+            <div class="row justify-content-center mb-3">
+              <div class="col-12">
+                <label for="phone" class="form-label">Telefone</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  placeholder="(xx) xxxxx-xxxx"
+                  oninput="phoneMask()"
+                />
+              </div>
             </div>
-          </div>
-          <div class="row justify-content-center mb-3">
-            <div class="col-12">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Email</label
-              >
-              <input
-                type="email"
-                name="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="name@example.com"
-              />
+            <div class="row justify-content-center mb-3">
+              <div class="col-12">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                />
+              </div>
             </div>
-          </div>
-          <div class="row justify-content-center mb-3">
-            <div class="col-12">
-              <label for="exampleFormControlTextarea1" class="form-label"
-                >Digite sua mensagem:
-              </label>
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="6"
-              ></textarea>
+            <div class="row justify-content-center mb-3">
+              <div class="col-12">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Digite sua mensagem:</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="6"
+                ></textarea>
+              </div>
             </div>
-          </div>
-          <div class="row justify-content-center mb-3 submit-btn">
-            <div class="col-12">
-              <button
-                type="submit"
-                class="btn btn-light submit-button mt-2 btn-lg w-50"
-              >
-                Enviar
-              </button>
+            <div class="row justify-content-center mb-3">
+              <div class="col-12">
+                <p id="formError" class="text-danger"></p>
+                <p id="formSent" class="text-success"></p>
+                <div class="sub-button-p4">
+                  <button
+                    type="submit"
+                    class="btn btn-primary submit-button mt-2 btn-lg w-50"
+                    onclick="submitForm(event)"
+                  >
+                    <span id="sendText">Enviar</span>
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
         <div
           class="col-12 col-lg-6 mb-4 badge text-wrap justify-content-center"
@@ -159,12 +167,137 @@
                 class="btn btn-success wpp-button-contact-page"
               >
                 <i class="bi bi-whatsapp"></i> (35) 98889-2908
-              </button></a
-            >
+              </button>
+            </a>
           </div>
         </div>
       </div>
     </div>
+
+    <script>
+      // Função para aplicar a máscara no campo de telefone
+      function phoneMask() {
+        var phoneInput = document.getElementById("phone");
+        var phone = phoneInput.value;
+
+        var phoneNumber = phone.replace(/\D/g, "");
+        var formattedPhone = "";
+
+        if (phoneNumber.length < 1) {
+          formattedPhone = "";
+        } else if (phoneNumber.length < 3) {
+          formattedPhone = "(" + phoneNumber;
+        } else if (phoneNumber.length < 7) {
+          formattedPhone =
+            "(" + phoneNumber.substring(0, 2) + ") " + phoneNumber.substring(2);
+        } else if (phoneNumber.length < 11) {
+          formattedPhone =
+            "(" +
+            phoneNumber.substring(0, 2) +
+            ") " +
+            phoneNumber.substring(2, 6) +
+            "-" +
+            phoneNumber.substring(6);
+        } else {
+          formattedPhone =
+            "(" +
+            phoneNumber.substring(0, 2) +
+            ") " +
+            phoneNumber.substring(2, 7) +
+            "-" +
+            phoneNumber.substring(7);
+        }
+
+        phoneInput.value = formattedPhone.substring(0, 15);
+      }
+
+      // Função para enviar o formulário
+      function submitForm(event) {
+        event.preventDefault();
+
+        var nameInput = document.getElementById("formGroupExampleInput");
+        var emailInput = document.getElementById("exampleFormControlInput1");
+        var phoneInput = document.getElementById("phone");
+        var msgInput = document.getElementById("exampleFormControlTextarea1");
+        var formError = document.getElementById("formError");
+        var formSent = document.getElementById("formSent");
+        var sendText = document.getElementById("sendText");
+
+        var name = nameInput.value;
+        var email = emailInput.value;
+        var phone = phoneInput.value;
+        var msg = msgInput.value;
+
+        formError.innerText = "";
+        formSent.innerText = "";
+
+        if (name.length <= 0) {
+          formError.innerText = "O nome é obrigatório";
+          return;
+        }
+
+        if (phone.length <= 0) {
+          formError.innerText = "O telefone é obrigatório";
+          return;
+        }
+
+        if (email.length <= 0) {
+          formError.innerText = "O email é obrigatório";
+          return;
+        }
+
+        if (msg.length <= 0) {
+          formError.innerText = "A mensagem é obrigatória";
+          return;
+        }
+
+        var formData = {
+          name: name,
+          email: email,
+          phone: phone,
+          message: msg,
+        };
+
+        var whatsText =
+          "*Olá! Gostaria de entrar em contato com você.*\n" +
+          "\n" +
+          "🪪 *Nome:* " +
+          formData.name +
+          "\n" +
+          "✉️ *Email:* " +
+          formData.email +
+          "\n" +
+          "\n" +
+          "💬 *Telefone:* " +
+          formData.phone +
+          "\n" +
+          "\n" +
+          "📄 *Mensagem:*\n" +
+          formData.message;
+
+        window.open(
+          "https://api.whatsapp.com/send/?phone=5535988892908&text=" +
+            encodeURIComponent(whatsText) +
+            "&type=phone_number&app_absent=0",
+          "_blank"
+        );
+
+        setTimeout(function () {
+          console.log("Form submitted", formData);
+
+          formSent.innerText = "Formulário enviado com sucesso!";
+
+          nameInput.value = "";
+          phoneInput.value = "";
+          emailInput.value = "";
+          msgInput.value = "";
+        }, 2000);
+      }
+
+      // Adiciona o evento de clique ao botão "Enviar"
+      var sendButton = document.querySelector("#myForm button[type='submit']");
+      sendButton.addEventListener("click", submitForm);
+    </script>
 
     <!-- Footer -->
     <footer class="text-center text-white mt-auto">
