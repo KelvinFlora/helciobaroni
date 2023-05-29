@@ -402,6 +402,25 @@ $primary: #000000;
     animation: fadeIn;
     animation-duration: 4s;
   }
+
+  .sub-slide1 {
+    font-size: large;
+    font-weight: 100;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-decoration: none;
+  }
+
+  .img-slide1 {
+    border-radius: 0.5rem;
+    width: 50% !important;
+  }
+
+  .text-slide1 {
+    padding-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
   
   @media screen and (max-width: 500px) {
 
@@ -518,6 +537,17 @@ $primary: #000000;
       text-align: center;
     }
   }
+  .img-slide1 {
+    border-radius: 0.5rem;
+    width: 100%;
+  }
+
+  .text-slide1 {
+    padding-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  
 
   @media (max-width: 768px) { 
     .history-img {
