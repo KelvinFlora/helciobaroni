@@ -468,6 +468,12 @@ $primary: #000000;
 }
 
 @media screen and (max-width: 500px) {
+  #home-slider .slide-image {
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+  }
+
   .slider-container {
     animation: fadeIn;
     animation-duration: 4s;
@@ -587,8 +593,8 @@ $primary: #000000;
   }
 
   .index-video {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     animation: fadeInUp;
     animation-duration: 2s;
   }
@@ -598,8 +604,8 @@ $primary: #000000;
   }
 
   .video-index-container {
-    padding-top: 250px;
-    padding-bottom: 250px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 
   .submit-btn {
