@@ -275,7 +275,7 @@ $primary: #000000;
 .swiper-class {
   position: relative;
   width: 60%;
-  min-height: 80vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -306,9 +306,12 @@ $primary: #000000;
 .testimonialBox {
   position: relative;
   width: 100%;
+  height: 300px;
   padding: 40px;
   padding-top: 0px;
   color: #999;
+  border: none !important;
+  margin-top: 60px;
   animation: fadeIn;
   animation-duration: 4s;
 }
@@ -467,6 +470,11 @@ $primary: #000000;
   animation-duration: 2s;
 }
 
+.slide-page {
+  animation: fadeIn;
+  animation-duration: 5s;
+}
+
 @media screen and (max-width: 500px) {
   #home-slider .slide-image {
     min-height: 80vh;
@@ -573,6 +581,13 @@ $primary: #000000;
     overflow: hidden;
     margin-top: 30px !important;
     margin-bottom: 30px !important;
+    flex-shrink: 100 !important;
+  }
+
+  .testimonialBox {
+    height: 300px;
+    margin-top: 60px;
+    border: none !important;
   }
 
   .card-container2 {
